@@ -39,6 +39,149 @@
 <div class="news-list" id="newsList">
 </div>
 
+<div class="footer-section">
+    <h2 class="footer-title">Fuel for Thought</h2>
+    <p class="footer-description">A casual hello from the RocketAir Crew filled with insights, inspiration, and good vibes only.</p>
+
+    <div class="footer-icon">
+        <div class="rocket-placeholder">🚀</div>
+    </div>
+
+    <div class="subscribe-section">
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Enter your email">
+        <button class="subscribe-btn">Subscribe</button>
+    </div>
+
+    <div class="privacy-policy">
+        <a href="#">Privacy Policy</a>
+    </div>
+</div>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+<style>
+.footer-section {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.footer-description {
+    font-size: 14px;
+    margin: 0;
+    margin-bottom: 20px;
+    color: #aaa;
+}
+
+.footer-icon {
+    margin: 20px 0;
+}
+
+.rocket-placeholder {
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    color: white;
+    margin: 0 auto;
+}
+
+.subscribe-section {
+    margin: 20px 0;
+}
+
+.subscribe-section label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #aaa;
+}
+
+.subscribe-section input {
+    padding: 10px;
+    width: 80%;
+    max-width: 400px;
+    margin-bottom: 10px;
+}
+
+.subscribe-btn {
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.footer-links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    max-width: 300px;
+    margin: 20px auto;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #aaa;
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 20px;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #aaa;
+}
+
+.privacy-policy {
+    margin-top: 20px;
+    font-size: 12px;
+}
+
+.privacy-policy a {
+    color: #aaa;
+    text-decoration: none;
+}
+
+@media (max-width: 600px) {
+    .footer-links {
+        grid-template-columns: 1fr;
+        gap: 5px;
+    }
+}
+</style>
+
 <script>
     const newsArticles = [
         { title: "RocketAir Launches New Service", link: "#" },
