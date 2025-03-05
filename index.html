@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>News | RocketAir</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: white;
+            padding: 20px;
+        }
+        h1 {
+            font-weight: bold;
+            color: black;
+            margin-bottom: 20px;
+        }
+        .news-list {
+            max-height: 400px;
+            overflow-y: auto;
+            border: 1px solid #ddd;
+            padding: 10px;
+        }
+        .news-item {
+            margin-bottom: 10px;
+        }
+        .news-item a {
+            text-decoration: none;
+            color: #007bff;
+        }
+        .news-item a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<h1>News</h1>
+
+<div class="news-list" id="newsList">
+</div>
+
+<script>
+    const newsArticles = [
+        { title: "RocketAir Launches New Service", link: "#" },
+        { title: "Design Trends of 1977", link: "#" },
+        { title: "RocketAir Expands to New Markets", link: "#" },
+        { title: "Behind the Scenes of RocketAir Projects", link: "#" }
+    ];
+
+    const newsList = document.getElementById('newsList');
+
+    newsArticles.forEach(article => {
+        const item = document.createElement('div');
+        item.classList.add('news-item');
+        item.innerHTML = `<a href="${article.link}" target="_blank">${article.title}</a>`;
+        newsList.appendChild(item);
+    });
+</script>
+
+</body>
+</html>
