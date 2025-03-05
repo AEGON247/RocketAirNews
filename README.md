@@ -1,15 +1,18 @@
 # RocketAirNews
 Attempting to clone the RocketAir site News Page
 
-# IEEE Task Details
-Name: Sachin Dev Mehta
-Year: First Year
-Reg No: 24BAI0333
-Level: 3 + signature splash screen
+## IEEE Task Details
+
+| Tech        | Details                            |
+|-------------|------------------------------------|
+| Name        | Sachin Dev Mehta                   |
+| Year        | First Year                         |
+| Reg No      | 24BAI0333                          |
+| Level       | 3 + signature splash screen        |
 
 # 🚀 RocketAir News Page Clone
 
-<img src="https://cdnl.iconscout.com/lottie/premium/thumb/rocket-cruising-animation-download-in-lottie-json-gif-static-svg-file-formats--launch-startup-spaceship-random-rockets-pack-business-animations-4741101.gif" width="400" height="450">
+<img src="https://cdnl.iconscout.com/lottie/premium/thumb/rocket-cruising-animation-download-in-lottie-json-gif-static-svg-file-formats--launch-startup-spaceship-random-rockets-pack-business-animations-4741101.gif" width="100" height="350">
 
 > ⚡️ A pixel-perfect **clone** of the stunning RocketAir News Page, built for learning, design appreciation, and pure fun!
 
@@ -102,9 +105,3 @@ For feedback or collaboration, reach out:
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?logo=linkedin)](https://www.linkedin.com/in/sachin-mehta-785704272/)  
 [![Email](https://img.shields.io/badge/Email-Contact%20Me-red?logo=gmail)](mailto:sachinmehta247@gmail.com)
-
----
-
-## 🚀 Ready to Explore? Clone & Customize Your Own RocketAir News Page Today! 🛠️
-
-<img src="https://media.giphy.com/media/QpVUMRUJGokfqXyfa1/giphy.gif" width="400" height="450">
