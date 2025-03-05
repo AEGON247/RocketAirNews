@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <title>News | RocketAir</title>
+    <meta name="author" content="Sachin Mehta">
     <meta content="Recent updates and announcements from RocketAir, a design and strategy company."
         name="description" />
     <meta content="News | RocketAir" property="og:title" />
@@ -27,8 +28,6 @@
         href="https://cdn.prod.website-files.com/6205ecdcec584c56193d6121/624a2a431d8c7bf34e990471_rocketair-webclip.png"
         rel="apple-touch-icon" />
 
-
-
     <style>
         #loader {
             position: fixed;
@@ -41,7 +40,38 @@
             justify-content: center;
             align-items: center;
             transition: opacity 0.5s ease-out;
+            z-index: 9999;
+        }
+
+        #message-box {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 20px 30px;
+            border-radius: 10px;
+            font-size: 18px;
             z-index: 10000;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.5s ease, visibility 0.5s ease;
+            text-align: center;
+        }
+
+        #blur-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            backdrop-filter: blur(8px);
+            background: rgba(0, 0, 0, 0.3);
+            z-index: 9998;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.5s ease, visibility 0.5s ease;
         }
 
         body .transition {
@@ -58,75 +88,6 @@
         .no-scroll-transition {
             overflow: hidden;
             position: relative;
-        }
-
-
-        div#hs-eu-cookie-confirmation {
-            width: auto !important;
-            top: auto !important;
-            bottom: 32px !important;
-            left: auto !important;
-            right: 15px !important;
-            font-family: Aeonikpro, sans-serif !important;
-            background: transparent !important;
-            height: 190px !important;
-            border: none !important;
-            box-shadow: none !important;
-            position: fixed !important;
-        }
-
-        div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner {
-            background: #000 !important;
-            color: #FFF !important;
-            max-width: 340px !important;
-        }
-
-        div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner p {
-            color: #FFF !important;
-            margin: 12px 4px !important;
-        }
-
-        div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner a#hs-eu-confirmation-button {
-            background-color: #000 !important;
-            color: #FFF !important;
-            transition: ease 200ms;
-        }
-
-        div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner a#hs-eu-confirmation-button:hover {
-            background-color: #FFF !important;
-            color: #000 !important;
-        }
-
-        div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner a#hs-eu-decline-button {
-            background-color: #000 !important;
-            color: #FFF !important;
-            transition: ease 200ms;
-        }
-
-        div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner a#hs-eu-decline-button:hover {
-            background-color: #FFF !important;
-            color: #000 !important;
-        }
-
-        @media only screen and (max-device-width : 478px) {
-
-            div#hs-eu-cookie-confirmation {
-                width: 100% !important;
-                height: 150px !important;
-                bottom: 16px !important;
-                left: auto !important;
-                right: auto !important;
-            }
-
-            div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner {
-                max-width: 95% !important;
-                width: 95% !important;
-                padding: 16px !important;
-            }
-
-            div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner div#hs-eu-policy-wording {
-                margin-top: 8px !important;
-            }
         }
 
         textarea:focus,
@@ -220,15 +181,6 @@
             }
         }
 
-        @media not all and (min-resolution:.001dpcm) and (min-device-width : 992px) and (max-device-width : 1439px) {
-            @supports (-webkit-appearance:none) and (stroke-color:transparent) {
-
-                .hero-work-wrapper {
-                    top: auto;
-                }
-            }
-        }
-
 
         .verticals__cursor-wrapper {
             pointer-events: none;
@@ -256,6 +208,16 @@
 
 <body class="body">
     <div class="global">
+
+        <div id="loader">
+            <img src="loader.gif" alt="Loading...">
+        </div>
+
+        <div id="blur-overlay"></div>
+
+        <div id="message-box">
+            Made with ❤️ by Sachin Mehta.<br>Hope you like it!!
+        </div>
 
         <div class="transition">
             <div class="page-transition"></div>
@@ -844,12 +806,28 @@
 
             window.onload = function() {
                 setTimeout(() => {
-                    document.getElementById('loader').style.opacity = '0';
-                    setTimeout(() => {
-                        document.getElementById('loader').style.display = 'none';
-                    }, 500);
-                }, 2000);
-        };
+                    document.getElementById('loader').style.display = 'none';
+
+                    const messageBox = document.getElementById('message-box');
+                    const blurOverlay = document.getElementById('blur-overlay');
+
+                    messageBox.style.visibility = 'visible';
+                    messageBox.style.opacity = '1';
+                    blurOverlay.style.visibility = 'visible';
+                    blurOverlay.style.opacity = '1';
+
+                    setTimeout(function() {
+                        messageBox.style.opacity = '0';
+                        blurOverlay.style.opacity = '0';
+
+                        setTimeout(function() {
+                            messageBox.style.visibility = 'hidden';
+                            blurOverlay.style.visibility = 'hidden';
+                            document.body.style.overflow = 'auto';
+                        }, 500);
+                    }, 2500);
+                }, 2500);
+    }
 
         function internalLink(myLink) {
             return (myLink.host == window.location.host);
