@@ -8,6 +8,7 @@
             font-family: Arial, sans-serif;
             background-color: white;
             padding: 20px;
+            overflow-x: hidden;
             font-size: 30px;;
         }
         h1 {
@@ -26,6 +27,7 @@
         .news-item {
             margin-bottom: 10px;
             transition: background-color 0.3s ease, color 0.3s ease;
+            position: relative;
         }
         .news-item a {
             text-decoration: none;
@@ -34,10 +36,41 @@
             color: black;
             transition: background-clor 0.3s ease, color 0.3s ease;
         }
-        .news-item a:hover {
+        .news-item:hover{
+            background-color: black;
+        }
+        .news-item:hover a{
             text-decoration: none;
             color: white;
-            cursor: pointer;
+        }
+
+        #customCursor {
+            position: fixed;
+            width: 100px;
+            height: 100px;
+            color: rgba(0, 0, 0, 0.8);
+            background-color: white;
+            font-size: 12px;
+            font-weight: bold;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            pointer-events: none;
+            z-index: 1000;
+            opacity: 0;
+            transform: translate(-50%, -50%);
+            transition: transform 0.15s ease-out, opacity 0.15s ease-out;
+            font-family: Arial, sans-serif;
+        }
+
+        .news-item:hover ~ #customCursor {
+            opacity: 1;
+        }
+
+        .cursor-active {
+            opacity: 1 !important;
+            transform: translate(-50%, -50%) scale(1.2);
         }
 
     </style>
@@ -48,6 +81,8 @@
 
 <div class="news-list" id="newsList">
 </div>
+
+<div id="customCursor">Learn More</div>
 
 <div class="footer-section">
     <h2 class="footer-title">Fuel for Thought</h2>
@@ -219,12 +254,25 @@
     ];
 
     const newsList = document.getElementById('newsList');
+    const customCursor = document.getElementById('customCursor');
 
     newsArticles.forEach(article => {
         const item = document.createElement('div');
         item.classList.add('news-item');
         item.innerHTML = `<a href="${article.link}" target="_blank">${article.title}</a>`;
         newsList.appendChild(item);
+
+        item.addEventListener('mouseenter', () => {
+            customCursor.classList.add('cursor-active');
+        });
+        item.addEventListener('mouseleave', () => {
+            customCursor.classList.remove('cursor-active');
+        });
+    });
+
+    document.addEventListener('mousemove', (e) => {
+        customCursor.style.left = `${e.clientX}px`;
+        customCursor.style.top = `${e.clientY}px`;
     });
 </script>
 
