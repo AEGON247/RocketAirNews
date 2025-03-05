@@ -8,7 +8,7 @@ Attempting to clone the RocketAir site News Page
 > ⚡️ A pixel-perfect **clone** of the stunning RocketAir News Page, built for learning, design appreciation, and pure fun!
 
 ## 🌐 Live Demo
-[🚀 Check it Out Here](#)
+[🚀 Check it Out Here](https://rocket-air-news.vercel.app/)
 
 ---
 
@@ -29,7 +29,7 @@ Attempting to clone the RocketAir site News Page
 
 ## 📸 Preview
 
-![Page Demo](./Preview.mov)
+![Page Demo](./Preview.mp4)
 
 ---
 
