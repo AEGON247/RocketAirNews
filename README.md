@@ -12,7 +12,7 @@ Attempting to clone the RocketAir site News Page
 
 ---
 
-## ✨ Features
+## ✨ Cool Features
 
 ✅ Fully responsive layout 📱  
 ✅ Smooth scrolling animations 🌀  
