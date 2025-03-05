@@ -3,7 +3,7 @@ Attempting to clone the RocketAir site News Page
 
 # 🚀 RocketAir News Page Clone
 
-![RocketAir Header](https://media.giphy.com/media/3oKIPoKw6Gw8x1I1pK/giphy.gif)
+![RocketAir Header](https://cdnl.iconscout.com/lottie/premium/thumb/rocket-cruising-animation-download-in-lottie-json-gif-static-svg-file-formats--launch-startup-spaceship-random-rockets-pack-business-animations-4741101.gif)
 
 > ⚡️ A pixel-perfect **clone** of the stunning RocketAir News Page, built for learning, design appreciation, and pure fun!
 
@@ -29,7 +29,7 @@ Attempting to clone the RocketAir site News Page
 
 ## 📸 Preview
 
-![Page Demo](https://media.giphy.com/media/WQ2pYlMFtvkv2/giphy.gif)
+![Page Demo]
 
 ---
 
@@ -59,7 +59,7 @@ Attempting to clone the RocketAir site News Page
 
 ### 📱 Mobile Responsive
 
-![Responsive](https://media.giphy.com/media/3o7aCTfyhYawdOXcFW/giphy.gif)
+![Responsive](https://assets-v2.lottiefiles.com/a/a4f834e2-1181-11ee-837e-73355d490bd4/8wZ2AGdbAh.gif)
 
 ---
 
