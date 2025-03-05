@@ -1,18 +1,24 @@
 # RocketAirNews
 Attempting to clone the RocketAir site News Page
 
+# IEEE Task Details
+Name: Sachin Dev Mehta
+Year: First Year
+Reg No: 24BAI0333
+Level: 3 + signature splash screen
+
 # 🚀 RocketAir News Page Clone
 
-<img src="https://cdnl.iconscout.com/lottie/premium/thumb/rocket-cruising-animation-download-in-lottie-json-gif-static-svg-file-formats--launch-startup-spaceship-random-rockets-pack-business-animations-4741101.gif" width="600" height="450">
+<img src="https://cdnl.iconscout.com/lottie/premium/thumb/rocket-cruising-animation-download-in-lottie-json-gif-static-svg-file-formats--launch-startup-spaceship-random-rockets-pack-business-animations-4741101.gif" width="400" height="450">
 
 > ⚡️ A pixel-perfect **clone** of the stunning RocketAir News Page, built for learning, design appreciation, and pure fun!
 
-## 🌐 Live Demo
+## 🌐 Live Hosted Demo
 [🚀 Check it Out Here](https://rocket-air-news.vercel.app/)
 
 ---
 
-## ✨ Cool Features
+## ✨ Cool Features !
 
 ✅ Fully responsive layout 📱  
 ✅ Smooth scrolling animations 🌀  
@@ -24,12 +30,6 @@ Attempting to clone the RocketAir site News Page
 ✅ Retina-ready images and SVG assets 🖼️  
 ✅ Seamless navigation bar 🧭  
 ✅ Footer with quick links, social media icons & logo ⚙️
-
----
-
-## 📸 Preview
-
-![Page Demo](./Preview.mp4)
 
 ---
 
@@ -59,7 +59,7 @@ Attempting to clone the RocketAir site News Page
 
 ### 📱 Mobile Responsive
 
-<img src="https://assets-v2.lottiefiles.com/a/a4f834e2-1181-11ee-837e-73355d490bd4/8wZ2AGdbAh.gif" width="600" height="450">
+<img src="https://assets-v2.lottiefiles.com/a/a4f834e2-1181-11ee-837e-73355d490bd4/8wZ2AGdbAh.gif" width="400" height="450">
 
 ---
 
@@ -107,4 +107,4 @@ For feedback or collaboration, reach out:
 
 ## 🚀 Ready to Explore? Clone & Customize Your Own RocketAir News Page Today! 🛠️
 
-<img src="https://media.giphy.com/media/QpVUMRUJGokfqXyfa1/giphy.gif" width="600" height="450">
+<img src="https://media.giphy.com/media/QpVUMRUJGokfqXyfa1/giphy.gif" width="400" height="450">
